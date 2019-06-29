@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %} dashboard {% endblock %}
+
+{% block content %}
+    <h1>dashboard</h1>
+    <p>welcome to your dashboard</p>
+    <p>you can <a href="{% url 'edit' %}">EDIT YOUR INFO</a> or <a href="{% url 'password_change' %}">CHANGE UR PASSWORD</a></p>
+
+
+{% with total_images_created=request.user.images_created.count %}
+<p>welcome to ur dash.u have bookmarked {{ total_images_created }} image{{ total_images_created|pluralize }}.</p>
+{% endwith %}
+
+<p>drag the following button to ur bookmarks toolbar to bookmark images from other sites - <a href="javascript:{% include 'bookmarklet_launcher.js' %}" class="button">BOOKMARK IT</a></p>
+
+{% endblock %}

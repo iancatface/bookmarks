@@ -1,0 +1,5 @@
+pillow
+social-auth-app-django
+((( ngrok )))
+sorl thumbnail
+redis
