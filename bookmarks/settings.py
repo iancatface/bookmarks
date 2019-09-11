@@ -146,8 +146,8 @@ AUTHENTICATION_BACKENDS = [
 
 ]
 
-# SOCIAL_AUTH_FACEBOOK_KEY = '1308447229321362' #facebook app id
-# SOCIAL_AUTH_FACEBOOK_SECRET = 'fc9656b55a84bf67d27cdaf666189533' #facebook app secret
+# SOCIAL_AUTH_FACEBOOK_KEY =  #facebook app id
+# SOCIAL_AUTH_FACEBOOK_SECRET =  #facebook app secret
 
 # # SOCIAL_AUTH_FACEBOOK_SCOPE = ['email'] #ask users also for email
 
